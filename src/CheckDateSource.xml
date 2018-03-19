@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="GBK"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+       http://www.springframework.org/schema/context
+		http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+    <context:property-placeholder location="classpath:jdbc.properties"/>
+
+    <bean id="formDateSource" class="org.apache.commons.dbcp.BasicDataSource"
+          destroy-method="close">
+        <property name="driverClassName">
+            <value>dm.jdbc.driver.DmDriver</value>
+        </property>
+        <property name="url">
+            <value>jdbc:dm://10.36.10.41:12345/DC_CLOUD?ignoreCase=true</value>
+        </property>
+        <property name="username">
+            <value>SYSDBA</value>
+        </property>
+        <property name="password">
+            <value>SYSDBA</value>
+        </property>
+    </bean>
+
+    <bean id="toDateSource" class="org.apache.commons.dbcp.BasicDataSource"
+          destroy-method="close">
+        <property name="driverClassName">
+            <value>dm.jdbc.driver.DmDriver</value>
+        </property>
+        <property name="url">
+            <value>jdbc:dm://10.36.10.41:12345/HD_DB?ignoreCase=true</value>
+        </property>
+        <property name="username">
+            <value>SYSDBA</value>
+        </property>
+        <property name="password">
+            <value>SYSDBA</value>
+        </property>
+    </bean>
+
+    <bean id="thDateSource" class="org.apache.commons.dbcp.BasicDataSource"
+          destroy-method="close">
+        <property name="driverClassName">
+            <value>dm.jdbc.driver.DmDriver</value>
+        </property>
+        <property name="url">
+            <value>jdbc:dm://10.36.10.41:12345/TH_DB?ignoreCase=true</value>
+        </property>
+        <property name="username">
+            <value>SYSDBA</value>
+        </property>
+        <property name="password">
+            <value>SYSDBA</value>
+        </property>
+    </bean>
+
+    <bean id="kindbase" class="org.apache.commons.dbcp.BasicDataSource"
+          destroy-method="close">
+        <property name="driverClassName">
+            <value>com.kingbase.Driver</value>
+        </property>
+        <!--<property name="url"><value>jdbc:kingbase://10.36.12.187:54321/ORZ</value></property>-->
+        <property name="url">
+            <value>jdbc:kingbase://10.36.10.235:54321/ORCL</value>
+        </property>
+        <property name="username">
+            <value>PLATFORM</value>
+        </property>
+        <property name="password">
+            <value>PLATFORM</value>
+        </property>
+    </bean>
+
+    <bean id="treeJxk" class="org.apache.commons.dbcp.BasicDataSource"
+          destroy-method="close">
+        <property name="driverClassName">
+            <value>com.kingbase.Driver</value>
+        </property>
+        <property name="url">
+            <value>jdbc:kingbase://10.36.10.239:54321/EMS</value>
+        </property>
+        <property name="username">
+            <value>TELLHOW</value>
+        </property>
+        <property name="password">
+            <value>TELLHOW</value>
+        </property>
+    </bean>
+
+
+    <bean id="formDateSourcegsn" class="org.apache.commons.dbcp.BasicDataSource"
+          destroy-method="close">
+        <property name="driverClassName">
+            <value>dm.jdbc.driver.DmDriver</value>
+        </property>
+        <property name="url">
+            <value>jdbc:dm://10.36.12.193:12345/HD_DB?ignoreCase=true</value>
+        </property>
+        <property name="username">
+            <value>SYSDBA</value>
+        </property>
+        <property name="password">
+            <value>SYSDBA</value>
+        </property>
+    </bean>
+    <bean id="formDateSourceHDDB" class="org.apache.commons.dbcp.BasicDataSource"
+          destroy-method="close">
+        <property name="driverClassName">
+            <value>dm.jdbc.driver.DmDriver</value>
+        </property>
+        <property name="url">
+            <value>jdbc:dm://10.36.10.41:12345/HD_DB?ignoreCase=true</value>
+        </property>
+        <property name="username">
+            <value>SYSDBA</value>
+        </property>
+        <property name="password">
+            <value>SYSDBA</value>
+        </property>
+    </bean>
+    <bean id="formDateSource40" class="org.apache.commons.dbcp.BasicDataSource"
+          destroy-method="close">
+        <property name="driverClassName">
+            <value>dm.jdbc.driver.DmDriver</value>
+        </property>
+        <property name="url">
+            <value>jdbc:dm://10.36.10.40:12345/DC_CLOUD1?ignoreCase=true</value>
+        </property>
+        <property name="username">
+            <value>SYSDBA</value>
+        </property>
+        <property name="password">
+            <value>SYSDBA</value>
+        </property>
+    </bean>
+
+
+</beans>

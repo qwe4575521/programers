@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="GBK"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+       http://www.springframework.org/schema/context
+		http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+    <context:property-placeholder location="classpath:jdbc.properties" />
+
+    <bean id="sjxfgs" class="org.apache.commons.dbcp.BasicDataSource"
+          destroy-method="close">
+        <property name="driverClassName"><value>${sjxfgs.sg.jdbc.driverClassName}</value></property>
+        <property name="url"><value>${sjxfgs.sg.jdbc.url}</value></property>
+        <property name="username"><value>${sjxfgs.sg.jdbc.username}</value></property>
+        <property name="password"><value>${sjxfgs.sg.jdbc.password}</value></property>
+    </bean>
+
+    <bean id="jjgdgs" class="org.apache.commons.dbcp.BasicDataSource"
+          destroy-method="close">
+        <property name="driverClassName"><value>${jjgdgs.sg.jdbc.driverClassName}</value></property>
+        <property name="url"><value>${jjgdgs.sg.jdbc.url}</value></property>
+        <property name="username"><value>${jjgdgs.sg.jdbc.username}</value></property>
+        <property name="password"><value>${jjgdgs.sg.jdbc.password}</value></property>
+
+    </bean>
+
+    <bean id="jagdgs" class="org.apache.commons.dbcp.BasicDataSource"
+          destroy-method="close">
+        <property name="driverClassName"><value>${jagdgs.sg.jdbc.driverClassName}</value></property>
+        <property name="url"><value>${jagdgs.sg.jdbc.url}</value></property>
+        <property name="username"><value>${jagdgs.sg.jdbc.username}</value></property>
+        <property name="password"><value>${jagdgs.sg.jdbc.password}</value></property>
+    </bean>
+
+
+    <bean id="ycgdgs" class="org.apache.commons.dbcp.BasicDataSource"
+          destroy-method="close">
+        <property name="driverClassName"><value>${ycgdgs.sg.jdbc.driverClassName}</value></property>
+        <property name="url"><value>${ycgdgs.sg.jdbc.url}</value></property>
+        <property name="username"><value>${ycgdgs.sg.jdbc.username}</value></property>
+        <property name="password"><value>${ycgdgs.sg.jdbc.password}</value></property>
+    </bean>
+
+
+    <bean id="gzgdgs" class="org.apache.commons.dbcp.BasicDataSource"
+          destroy-method="close">
+        <property name="driverClassName"><value>${gzgdgs.sg.jdbc.driverClassName}</value></property>
+        <property name="url"><value>${gzgdgs.sg.jdbc.url}</value></property>
+        <property name="username"><value>${gzgdgs.sg.jdbc.username}</value></property>
+        <property name="password"><value>${gzgdgs.sg.jdbc.password}</value></property>
+    </bean>
+
+
+    <bean id="srgdgs" class="org.apache.commons.dbcp.BasicDataSource"
+          destroy-method="close">
+        <property name="driverClassName"><value>${srgdgs.sg.jdbc.driverClassName}</value></property>
+        <property name="url"><value>${srgdgs.sg.jdbc.url}</value></property>
+        <property name="username"><value>${srgdgs.sg.jdbc.username}</value></property>
+        <property name="password"><value>${srgdgs.sg.jdbc.password}</value></property>
+    </bean>
+
+
+    <bean id="jdzgdgs" class="org.apache.commons.dbcp.BasicDataSource"
+          destroy-method="close">
+        <property name="driverClassName"><value>${jdzgdgs.sg.jdbc.driverClassName}</value></property>
+        <property name="url"><value>${jdzgdgs.sg.jdbc.url}</value></property>
+        <property name="username"><value>${jdzgdgs.sg.jdbc.username}</value></property>
+        <property name="password"><value>${jdzgdgs.sg.jdbc.password}</value></property>
+    </bean>
+
+
+    <bean id="ytgdgs" class="org.apache.commons.dbcp.BasicDataSource"
+          destroy-method="close">
+        <property name="driverClassName"><value>${ytgdgs.sg.jdbc.driverClassName}</value></property>
+        <property name="url"><value>${ytgdgs.sg.jdbc.url}</value></property>
+        <property name="username"><value>${ytgdgs.sg.jdbc.username}</value></property>
+        <property name="password"><value>${ytgdgs.sg.jdbc.password}</value></property>
+    </bean>
+
+
+    <bean id="fzgdgs" class="org.apache.commons.dbcp.BasicDataSource"
+                 destroy-method="close">
+    <property name="driverClassName"><value>${fzgdgs.sg.jdbc.driverClassName}</value></property>
+    <property name="url"><value>${fzgdgs.sg.jdbc.url}</value></property>
+    <property name="username"><value>${fzgdgs.sg.jdbc.username}</value></property>
+    <property name="password"><value>${fzgdgs.sg.jdbc.password}</value></property>
+    </bean>
+
+
+    <bean id="ncgdgs" class="org.apache.commons.dbcp.BasicDataSource"
+          destroy-method="close">
+        <property name="driverClassName"><value>${ncgdgs.sg.jdbc.driverClassName}</value></property>
+        <property name="url"><value>${ncgdgs.sg.jdbc.url}</value></property>
+        <property name="username"><value>${ncgdgs.sg.jdbc.username}</value></property>
+        <property name="password"><value>${ncgdgs.sg.jdbc.password}</value></property>
+    </bean>
+
+
+    <bean id="gxgdgs" class="org.apache.commons.dbcp.BasicDataSource"
+          destroy-method="close">
+        <property name="driverClassName"><value>${gxgdgs.sg.jdbc.driverClassName}</value></property>
+        <property name="url"><value>${gxgdgs.sg.jdbc.url}</value></property>
+        <property name="username"><value>${gxgdgs.sg.jdbc.username}</value></property>
+        <property name="password"><value>${gxgdgs.sg.jdbc.password}</value></property>
+    </bean>
+
+
+
+
+
+
+</beans>
